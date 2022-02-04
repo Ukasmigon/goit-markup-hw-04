@@ -117,9 +117,17 @@ p {
   color: var(--secondary-color);
 }
 
+.envelope-icon:hover,
+.envelope-icon:focus {
+  fill: var(--secondary-color);
+}
+
 .heading-section {
   background-color: var(--background);
   height: 600px;
+  background-image: url(/images/zamow-usluge-background\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .heading {
