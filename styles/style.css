@@ -6,7 +6,7 @@
   --quinary-color: rgba(255, 255, 255, 0.6);
   --background: #2f303a;
   --second-background: #f5f4fa;
-  --social-media: #AFB1B8;
+  --icons: #AFB1B8;
 }
 
 body {
@@ -180,7 +180,6 @@ p {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -293,9 +292,21 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--social-media);
+  background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+  fill: var(--icons)
+}
+
+.address-social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
 }
 
 .social-icon {
@@ -318,28 +329,37 @@ p {
 }
 
 .our-clients-list {
+  list-style: none;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.our-clients-list-item {
-  list-style: none;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-}
-
 .our-clients-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100px;
+  height: 60px;
 }
 
 .our-clients-list-link {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+}
+
+.our-clients-list-link:hover,
+.our-clients-list-link:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.our-clients-icon:hover {
+  fill: #2196f3;
 }
 
 .footer {
@@ -349,6 +369,10 @@ p {
 
 .contact-list {
   list-style: none;
+}
+
+.contact-data {
+  width: 246px;
 }
 
 .address {
@@ -373,6 +397,24 @@ p {
 
 .contact-list-address {
   color: var(--quaternary-color);
+}
+
+.contact-data-container {
+  display: flex;
+}
+
+.join-us {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.social {
+  margin-left: 70px;
+}
+
+.address-social-list-link:hover {
+  background-color: #2196f3;
 }
 
 /* ==== PORTFOLIO ==== */
