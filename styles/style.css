@@ -135,7 +135,7 @@ p {
   height: 600px;
   width: 1600px;
   margin: 0 auto;
-  background-image: url(./images/zamow-usluge-background.jpg);
+  background-image: url("/images/zamow-usluge-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
